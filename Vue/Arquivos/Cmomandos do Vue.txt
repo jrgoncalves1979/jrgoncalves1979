@@ -1,0 +1,9 @@
+
+
+v-text=''
+v-html=''
+v-if=''
+v-bind:id=''
+v-on:click='clicou'
+
+

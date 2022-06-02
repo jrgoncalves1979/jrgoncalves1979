@@ -1,0 +1,43 @@
+/*Header, menu*/
+nav ul,
+nav li {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-left: 10px;
+    align-items: center;
+    font-size: 14px;
+}
+li a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+
+/*Imagem do google no centro da tela*/
+.imagem_google {
+    display: flex;
+    height: 150px;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+/*Barra de pesquisa*/
+.botaolupa {
+    display: flex;
+    justify-content: center;
+    margin-top: 41px;
+}
+.botaolupa input {
+    width: 556px;
+    height: 45px;
+    border-radius: 25px;  
+}
+.botaolupa input ::placeholder {
+    font-size: 15px;
+    padding-left: 30px;
+}

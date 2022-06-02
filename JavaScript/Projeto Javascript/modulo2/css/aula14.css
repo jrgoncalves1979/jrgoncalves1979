@@ -1,0 +1,18 @@
+.texto {
+    width: 200px;
+    height: 1100px;
+    overflow: auto;
+    background-color: #555;
+}
+
+.scrollbutton {
+    width: 40px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: #007766;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 999;
+    cursor: pointer;
+}

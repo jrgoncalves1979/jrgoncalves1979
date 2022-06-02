@@ -1,0 +1,78 @@
+/*Alinhamento do h1*/
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+
+/*Corpo da pagina*/
+.pagina_inteira {
+    display: flex;
+    background-color: #464d6a;
+   /* flex-direction: column;*/
+    align-items: center;
+    color: #b7b6b9;
+    height: 900px;
+    justify-content: center;
+}
+.pagina_inteira_2 {
+    height: 700px;
+    width: 600px;
+    background-color: #353b51;
+}
+.area_cadastro {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/*Cor aos inputs e placeholder(Campos)*/
+input {
+    background-color: rgb(168, 165, 165);
+    display: flex;
+}
+input::placeholder {
+    color: rgb(58, 58, 58);
+}
+
+
+/*Escolha do Sexo*/
+.sexo {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+/*Botão Enviar*/
+.botão {
+    display: flex;
+    justify-content: center;
+}
+button {
+    color: #b7b6b9;
+    height: 55px;
+    width: 416px;
+    background-color: #a13954;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

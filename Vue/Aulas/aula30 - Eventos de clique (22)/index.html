@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vue.js</title>
+	<meta charset="utf-8" />
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+	<div id="app">
+		<header class="header">
+
+		</header>
+		<section class="container">
+			<section class="container__content">
+		
+			<div class="area" v-on:click.self="algo"><!--.self só fica clicavel nele mesmo, o botão Clique em mim não é mais clicavel-->
+				<button>Clique em mim</button>
+			</div>
+
+			<p>A contagem é: {{ contagem }}</p>
+
+			</section>
+			<aside class="container__sidebar">
+
+			
+			</aside>
+		</section>
+		<footer class="footer">
+
+		</footer>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
+
+<!--
+.once é um modificador que só funciona uma vez, 
+.self é uma modificador que só ativa a area que ele está.
+
+Obs: Da pra usar os dois ao mesmo tempo, mas a ordem dos modificares
+inflencia o como vai ser o funcionamento.
+Ex: v-on:click.self.once="algo"
+
+Ex: com formulário
+Em um formulário o o self tem que vim antes do prevent, senão o self fica
+inutilizavel.
+<form vc-on:click.self.prevent="fazerAlgo">
+</form>
+-->
+
+
+
+
+
+
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vue.js</title>
+	<meta charset="utf-8" />
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+	<div id="app">
+		<header class="header">
+
+		</header>
+		<section class="container">
+			<section class="container__content">
+			<!--
+			Ex:1	
+			<input type="text" v-model="mensagem">
+			
+			<p>Mensagem: {{ mensagem }}</p>
+			
+			Ex:2
+			<input type="checkbox" v-model="selecionado">
+			
+			<p>selecionado: {{ selecionado }}</p>
+			
+			Ex:3
+			<input type="checkbox" value="Bonieky" v-model="nomes">Bonieky<br/>
+
+			<input type="checkbox" value="Antonio" v-model="nomes">Antonio<br/>
+
+			<input type="checkbox" value="Paulo" v-model="nomes">Paulo<br/>
+
+			<p>Nomes: {{ nomes }}</p>
+			
+			Ex:4
+			<input type="radio" nome="grupo" value="sim" v-model="grupo">
+			<input type="radio" nome="grupo" value="não" v-model="grupo">
+
+			<p>Grupo: {{ grupo }}</p>
+			-->	
+
+			<select v-model="opcao">
+				<option v-for="item in opcoes" v-bind:value="item.letra">{{item.nome}}</option>
+
+			</select>
+
+			<p>Opções: {{opcao}}</p>
+
+			</section>
+			<aside class="container__sidebar">
+
+			
+			</aside>
+		</section>
+		<footer class="footer">
+
+		</footer>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

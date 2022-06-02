@@ -1,0 +1,37 @@
+body {
+    margin: 25px;
+    text-align: left;
+    test
+}
+
+h1{
+    width: 310px;
+    padding: 20px;
+    border: 2px solid #000000;
+    margin: 2px;
+}
+
+p {
+    text-shadow: 2px 2px 4px #a24aca;
+    font-size: 25px;
+    font-weight: bold; box-shadow: #00ff00;
+}
+
+#textdesc{
+    width: 300px;
+    height: 200px;
+}
+
+
+.bordaredonda{
+    background-color: #a24aca;
+    border-radius: 20px;
+}
+
+
+
+.exemplo {
+    border: 1px solid #00ff00;
+    padding: 20px;
+    margin: 20px;
+    }

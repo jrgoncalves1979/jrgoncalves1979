@@ -1,0 +1,61 @@
+<!DOCTYPE html> <!--transforma em html5-->
+<html>
+    <head>
+        <meta charset="UTF-8"/> <!--para corrigir acentuação das guias das paginas-->
+        <title>Pagina de teste</title><!--nome que vai na guia do navegador"orelha"-->
+        <link rel="stylesheet" href="estilo.css"/> <!-- href="estilo.css" puxa caracteristicas do arquivo criado como .css -->
+    </head>
+    <body>
+        <h1>Esse é o Primeiro teste</h1>
+        <br/><!--<br/> pula de linha-->>
+        <p>
+            Aqui tem um comentario!!!
+            <br/>
+            Fazendo <del>Formulario  ></del><!--del deixa a palavra riscada no meio-->
+        </p>
+
+        <form action="cadastro"><br/>
+            
+            <label><!--label da o nome do campo, nesse caso Nome no Cadastro-->>
+                <strong>Nome</strong> no Cadastro:<br/>
+                <input type="text" name="name" required maxlength="50" autofocus/><!--input cria a caixa nesse caos texto, name da o nome para a caixa criada, required = campo obrigatório, maxlength define o maximo de quantos caracteres pode ter o campo, autofocus já foca, seleciona automaticamente o campo.-->
+            </label>
+            <br/><br/>
+            <label>
+                Email:<br/>
+                <input type="email" name="email" class="bordaredonda" required/>
+            </label>
+            <br/><br/>
+            <label>
+                Telefone:<br/>
+                <input type="tel" name="celular" required maxlength="11" minlength="11"/>
+            </label>
+            <br/><br/>
+            <label>
+                Data de <strong>Aniversario:</strong><br/>
+                <input type="date" name="birthdate" min="2021-06-14"/>
+            </label>
+            <br/><br/>
+            <label>
+                Descrição:<br/>
+                <textarea name="Descricao" id="textdesc" ></textarea><!--textarea cria um campo do tipo para descrição-->>
+                
+            </label>
+           
+        </form><br/>
+            
+            <label>
+                Masculino:
+                <input type="radio" name="sexo"/>
+            </label>
+            <label>
+                Feminino:
+                <input type="radio" name="sexo"/>
+            </label>
+            
+            <input type="submit" name="Enviar"/>
+            
+        </form>
+
+
+    </body>

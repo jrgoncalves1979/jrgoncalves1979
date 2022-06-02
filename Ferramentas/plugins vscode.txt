@@ -1,0 +1,61 @@
+Para ver tags abertas e fechadas -  highlight-matching-tag
+
+
+
+
+
+Canal Código Fonte - 23 Extensões do VS Code - https://www.youtube.com/watch?v=tmgpF7Bn3_E
+Timeline:
+01:34 - Beautify
+02:14 - Bookmarks
+03:13 - Bootstrap4
+04:04 - C/C++
+04:08 - Platform IO IDE
+04:38 - Composer
+05:03 - Dart
+05:08 - Flutter
+05:58 - Debugger For Chrome
+06:14 - Live Server (Go Live)
+07:28 - Docker
+07:54 - Dracula Official
+08:28 - ESLint
+08:56 - JavaScript Snippet Pack
+09:34 - markDownlint
+10:06 - Material Icon Theme
+10:43 - PHP IntelliSence
+10:45 - PHP IntelliSence for codeigniter
+11:14 - Pomodoro Timer
+12:02 - Power Mode (Fogo no código)
+12:43 - Python
+13:09 - Rainbow Brackets
+13:43 - Vs Code HackerTyper
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

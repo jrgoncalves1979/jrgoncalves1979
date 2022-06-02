@@ -1,0 +1,21 @@
+https://alunos.b7web.com.br/forum/javascript/duvida-new-date
+
+
+Por enquanto não de forma aprofundada, mas tá no planejamento. A aula que tem é essa daqui: https://alunos.b7web.com.br/curso/fezp/classes-no-es6
+Eu digo que não de forma aprofundada pq só conhecer classes é só a introdução pro conteúdo realmente importante aqui que é a orientação a objetos e nas aulas de JS não é nada abordado sobre o paradigma orientado a objetos.
+E isso não é nada surpreendente dado que JS é uma das piores linguagens para ensinar esse conceito na minha opinião, inclusive além de ser mais difícil vai deixar as pessoas todas confusas afinal ele implementa a OO de um jeito totalmente diferente das outras linguagens, e muitos dos conceitos de outras linguagens nem existem aqui e precisam meio que ser feitos na mão. Então se vc já manja de OO e tentar aprender no JS vc até entende mas acha estranho, mas se vc não sabe nada ai só te ferra mais ainda, pq todos os outros materiais bons vão ser mais chatinhos de entender.
+  
+Antes de continuar sobre esse assunto vou responder se é importante, e a resposta é: Claro, com ctz, literalmente programar no mercado de trabalho hj em dia é igual a dizer que vc programa orientado a objetos, é isso que se usa de vdd em qq software que seja maior que um crudzinho simples (ou que passe de um algoritmozinho de 100 linhas) hj em dia. O pessoal do JS geralmente apanha mais nisso pelos motivos que eu citei acima, e pq geralmente o pessoal do JS é do front-end, e não é a toa que muita gente ridiculariza os front-end falando que não programa de vdd (embora isso seja uma tremenda mentira) ou que o front que tem o trampo fácil, já que muito front-end não entende nem o básico de OO e escreve o código tudo porco (e ainda bem desde que o front-end começou a se tornar mais sério isso vem mudando num ritmo bem rápido).
+  
+A parada de aprender OO com JS já começa complicada pq ele é baseado em prototipos e não em classes (todo o resto das linguagem popular é tudo classe, só o JS que quis ser diferentão kkkkkk), ai hj em dia ele até pode ter classes, mas elas são o que nós chamamos de sintax sugar, que é basicamente uma sintaxe bonitinha que faz parecer que vc tá usando uma classe, mas por de baixo dos panos continua tudo baseado em protótipo. Ai outra coisa que complica é que o JS tem umas 5 ou 6 formas diferentes de criar objetos (o new, método factory, funções, e etc), enquanto outras linguagens geralmente tem 2 (o new e um método factory), que se vc tiver interesse pode aprender de forma detalhada nesse link aqui:
+https://css-tricks.com/the-flavors-of-object-oriented-programming-in-javascript/
+  
+Mas então eu falei um monte de coisa aqui e várias delas podem ter te confundido, entretanto espero que vc tenha entendido que OO é um conteúdo super importante pros dias de hj, só que aprender ela em JS é um parto, logo qual seria uma boa solução e que ainda aproveita o conteúdo da plataforma?
+Ver as aulas de PHP sobre o assunto, claro que como eu falei lá em cima algumas coisas não existem no js então vc vai aprender e ficar um pouco perdido quando voltar, só que agr o professor tá tentando focar muito em trazer muito conteúdo de TS (typescript) para plataforma e ela conserta a maioria dos problemas que eu citei com a OO do JS, então depois vc só precisa ver essas aulas e tá tudo certo.
+Assiste primeiro esse módulo
+https://alunos.b7web.com.br/curso/php/introducao-a-orientacao-a-objetos
+
+E as aulas de SOLID
+https://alunos.b7web.com.br/curso/php/conceito-solid
+  
+Ai vc tenta entender (até pq a sintaxe do php é bem parecida com a do JS então não deve ser muito dificil de entender) que vai começar a criar sua base de conhecimento sobre OO.

@@ -1,0 +1,15 @@
+Canal - Devmedia - Visual Studio Code Saiba como usar os melhores recursos - https://www.youtube.com/watch?v=rIvUqLFsGB4
+
+
+1º Completar palavra ctrl + espaço para completar apertar tab ou selecionar com mouse.C
+
+2º F2 - marca o texto que você quer mudar.
+exemplo: se criou uma variável A e quer mudar pra B todas serão mudadas.
+
+3º Cursor ctrl + alt + seta pra cima ou para baixo ou home, depende do que for fazer.
+
+4º shift + alt + seta copia a linha quantas vezes é colocado para baixo.
+
+5º ctrl + click vai selecionar onde a variável foi criada.
+
+6º Debbug

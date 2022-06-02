@@ -1,0 +1,64 @@
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    
+    <title>Vue Js</title>
+</head>
+<body>
+    <div id="placar">
+        <div>{{ n }}</div>
+        <span v-if="n > 5">Parabéns, você passou de 5 pontos !</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+-->
+
+
+
+
+<!--
+SEGUNDA PARTE DA AULA.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    
+    <title>Vue Js</title>
+</head>
+<body>
+    <div id="lista">
+        <ul>
+            <li v-for="info in nomes">
+                <span>Sr.</span>
+                <span v-text="info.nome"></span><!--Primeiro jeito de declarar.-->
+                <span>{{info.sobrenome}}</span><!--Segundo jeito de declarar.-->
+                <span>{{info.idade+' anos'}}</span><!--Com concatenação, pode se ser colocado fora tambem {{info.idade }} anos-->
+            </li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+
+
+
+<!--Primeiro exemplo:
+<div id="lista">
+        <ul>
+            <li v-for="info in nomes">
+                {{info.nome}}
+            </li>
+        </ul>
+    </div>
+-->

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vue.js</title>
+	<meta charset="utf-8" />
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<!--<script src="https://cdn.jsdelivr.net/npm/vue"></script>-->
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+	<div id="app">
+		<header class="header">
+			
+			
+
+		</header>
+		<section class="container">
+			<section class="container__content">
+
+				<div v-if="aviso">Este é um aviso</div>
+				<!--true mostra na tela, false oculta-->
+				
+				<div v-bind:id="divid">Está é uma div qualquer...</div>
+				<!--v-bind transforma o nome do id de divid para qualquer, olhar o exemplo no arquivo JS -->
+
+				<a v-bind:href="link">Acessar</a>
+				<!--em vez de colocar o endereço href='https://google.com.br' aqui no html, coloca se no JS e chama pelo v-bind-->
+
+				<div v-bind:id="'iten-'+n">Div qualquer</div>
+				<!---->
+
+
+			</section>
+			<aside class="container__sidebar">
+
+				<button v-on:click="clicou">Clique em mim</button>
+
+			</aside>
+		</section>
+		<footer class="footer">
+
+				<form v-on:submit.prevent="enviou"><!--Prevent para ele tirar o padrão normal que é enviar direto, com o prevent ele preveniu que enviasse. OBS: foi feito isso no form não é no proprio botão-->
+					<input type="text">
+
+					<input type="submit" value="Enviou!">
+
+				</form>
+
+		</footer>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

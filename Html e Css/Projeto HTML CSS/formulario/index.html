@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0">
+    <link rel="stylesheet" href="./assets/css/template.css">
+    <title>Formulário de Cadastro</title>
+</head>
+
+<body style="margin: 0";>
+    <div class="pagina_inteira">
+        <div class="pagina_inteira_2">
+        <h1>Formulario de Cadastro</h1>
+       
+        <form action="cadastro">
+            
+            <div class="area_cadastro">
+                <label for="Nome">
+                     Nome Completo:<br/>
+                    <input type="text" name="Nome"  placeholder="Name" maxlength="50" autofocus required><!--"Placeholder" é utilizado para indicar ao navegador o texto que deverá aparecer escrito no campo do formulário, na maioria das vezes utilizado para indicar ao usuário como deve ser preenchido aquele campo em específico ou a função daquele campo de formulário.-->
+                </label><br/>
+
+                <label for="email"><!--O atributo (FOR) faz um tipo de link entre a label e o input . Logo o for tem que apontar para o ID do input . Outra forma de uso é que vc pode fazer vários tipos de customização pelo CSS escondendo o input default do browser por exemplo e usando a própria label como se fosse o botão.-->
+                     Email:<br/>
+                    <input type="email" name="email" placeholder="E-mail" maxlength="30" required> 
+                </label><br/>
+
+                <label for="telefone">
+                     Telefone:<br/>
+                    <input type="tel" name="telefone" placeholder="Telephone" required> 
+                </label><br/>
+
+                <label for="cep">
+                    Cep:<br/>
+                   <input type="cep" name="cep" placeholder="Zip code" required> 
+               </label><br/>
+
+               <label for="endereco">
+                   Endereço:<br/>
+                   <input type="endereco" name="endereco" placeholder="Address" required>
+               </label><br/>
+
+               <label for="cpf">
+                   Cpf:<br/>
+                   <input type="nunber" name="cpf" placeholder="Irs-Internal Revenue Service" required>
+               </label>
+
+            </div>
+
+            <label class="sexo">
+                Masculino:
+                <input type="radio" name="sex"/>
+            </label>
+            <label class="sexo">
+                Feminino:
+                <input type="radio" name="sex"/>
+            </label>
+            
+            <div class="sexo">
+                <label>Sexo:</label>
+                <select><!--Caixa de seleção para escolha Male x Female-->
+                    <option></option><!--deixa a caixa em branco-->
+                    <option value="male">Masculino</option>
+                    <option value="female">Feminino</option>
+                </select>
+            </div>
+            
+            <div class="botão">
+            <button>Enviar</button>
+            </div>
+        
+        </form>
+        </div>
+    </div>
+</body>
+</html>
+

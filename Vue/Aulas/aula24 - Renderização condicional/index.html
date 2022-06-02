@@ -1,0 +1,85 @@
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vue.js</title>
+	<meta charset="utf-8" />
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+	<div id="app">
+		<header class="header">
+
+		</header>
+		<section class="container">
+			<section class="container__content">
+
+				<h1 v-if="ganhou">Você ganhou!!!</h1>
+				<h1 v-else>Você Perdeu!!!</h1>
+
+			</section>
+			<aside class="container__sidebar">
+
+			
+			</aside>
+		</section>
+		<footer class="footer">
+
+		</footer>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
+-->
+
+
+
+
+<!-- COM TEMPLATE
+Wle não aparece no html, é como se fosse um bloco invisivel.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vue.js</title>
+	<meta charset="utf-8" />
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<!--<script src="https://cdn.jsdelivr.net/npm/vue"></script>-->
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+	<div id="app">
+		<header class="header">
+
+		</header>
+		<section class="container">
+			<section class="container__content">
+
+				<template v-if="ganhou">
+					<h1>Você Ganhou!</h1>
+					<small>Parabéns!</small>
+				</template>
+				<template v-else>
+					<h1>Você Perdeu!</h1>
+					<small>Desculpe!</small>
+				</template>
+				
+
+			</section>
+			<aside class="container__sidebar">
+
+			
+			</aside>
+		</section>
+		<footer class="footer">
+
+		</footer>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>

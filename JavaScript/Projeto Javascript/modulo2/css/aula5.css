@@ -1,0 +1,31 @@
+#exemplo {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    border: 1px solid #555;
+}
+.verde {
+    background-color: green;
+    color: black;
+}
+.vermelho {
+    background-color: red;
+    color: yellow;
+}
+.azul {
+    background-color: blue;
+    color: #FFFFFF;
+}
+button {
+    margin-left: 18px;
+}
+
+
+
+
+
+
+
+
+
+

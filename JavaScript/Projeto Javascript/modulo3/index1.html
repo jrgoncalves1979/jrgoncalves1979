@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Curso de JavaScript</title>
+</head>
+<body>
+    <!--Evento de Clique - Aula 1-->
+    <h1 id="titulo"
+    onclick="console.log('clicou')"
+    onmouseover="console.log('Passou o mouse')"
+    onmouseout="console.log('Tirou o mouse')">Seja bem vindo(a)</h1>
+
+    <input id="campo" onclick="clicar()" type="text" name="usuario" value="Nome do usuário">
+
+    <script src="aula1.js"></script>
+</body>
+</html>
+
+<!--
+Alterar o proprio botão com o this
+Obs: this quer dizer o prório botão.
+
+<input id="campo" onclick="this.innerHTML='clicou'" type="text" name="usuario" value="Nome do usuário">
+Que é o mesmo de "document.getElementById(campo).innerHTML='clicou'"
+Obs:está alterando oo texto do próprio botão.
+-->

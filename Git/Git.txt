@@ -1,0 +1,407 @@
+Fazendo usuario, email e editor
+git config --global user.name "Junior Goncalves"
+git config --global user.email "jnnr79@outlook.com"
+git config --global core.editor vscode
+
+
+
+
+
+Comandos para saber usuario, email e editor
+git config --global user.name
+git config --global user.email
+git config --global core.editor
+
+
+
+
+
+Listar tudo
+git config --list
+
+Jnnr7@Xeon MINGW64 ~ $ git config --list
+
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager-core
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+core.editor=vscode
+user.nome=Junior Goncalves
+user.email=jnnr79@outlook.com
+user.name=Junior Goncalves
+
+
+
+
+
+Fazendo a pasta git init
+C:\>cd modulogit
+C:\modulogit>
+C:\modulogit>git init
+Initialized empty Git repository in C:/modulogit/.git/
+
+
+
+
+
+Vendo status do git, foi criado o arquivo README.txt
+C:\modulogit>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+
+
+
+
+Incluindo o README.txt no git.
+C:\modulogit>git add README.txt
+
+
+
+
+
+Dado o status novamente.
+C:\modulogit>git status
+
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   README.txt
+
+
+
+
+
+
+Feito p primeiro Commit.
+C:\modulogit>git commit -m "Primeiro Commit"
+[master (root-commit) d014f55] Primeiro Commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.txt
+
+
+
+
+
+Ver lista de todos os Commit que foi feito no Branch.
+C:\modulogit>git log
+commit d014f55ac79ed3625606927f7a34148d8eb4644c (HEAD -> master)
+Author: Junior Goncalves <jnnr79@outlook.com>
+Date:   Wed Mar 2 19:32:50 2022 -0300
+
+    Primeiro Commit
+    
+    
+    
+    
+Com a modificação, foi criado arquivos e feito alteração no arquivo README.
+C:\modulogit>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+        style.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+
+
+Para incluir os aquivos novos citados acima.
+C:\modulogit>git add -A (para TRACKEAR todos)
+o A tem que ser maiusculo
+
+Dado o status de novo.
+C:\modulogit>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.txt
+        new file:   index.html
+        new file:   style.css
+
+Depois disso precisa dar o Commit senão ele não sobe pro git só fica na maquina.
+C:\modulogit>git commit -m "Criando os arquivos principais, index e style, bem como modificando README"
+[master aa8855c] Criando os arquivos principais, index e style, bem como modificando README
+ 3 files changed, 3 insertions(+), 1 deletion(-)
+ create mode 100644 index.html
+ create mode 100644 style.css
+ 
+ 
+ 
+ 
+ Para ver o branch que está.
+C:\modulogit>git branch
+* master
+
+
+
+C:\modulogit>git commit -am "Segundo Commit, Alterado o arquivo README"  (-am faz o trackear e já faz tambem o commit))
+[master e2f7596] Segundo Commit, Alterado o arquivo README
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+
+
+Resets:
+git reset --soft (mais a chave commit) Ex: commit d014f55ac79ed3625606927f7a34148d8eb4644c do cmd
+Manterá seus arquivos e fará todas as alterações de volta automaticamente.
+Ao usar git reset --soft HEAD~1 você removerá o último commit da ramificação atual, 
+mas as alterações no arquivo permanecerão em sua árvore de trabalho. 
+Além disso, as alterações permanecerão no seu índice, portanto, 
+seguir com um git commit criará um commit com exatamente as mesmas alterações que o commit que você "removeu" antes.
+
+
+git reset --mixed (mais a chave commit) Ex: commit d014f55ac79ed3625606927f7a34148d8eb4644c do cmd
+Assim como o soft, isso irá redefinir o HEAD para outro commit. 
+Ele também redefinirá o índice para corresponder a ele, enquanto o diretório de trabalho não será tocado. 
+Todas as alterações permanecerão no diretório de trabalho e aparecerão como modificadas, mas não preparadas.
+
+
+git reset --hard (mais a chave commit) Ex: commit d014f55ac79ed3625606927f7a34148d8eb4644c do cmd
+Destruirá completamente todas as alterações e as removerá do diretório local .
+
+
+
+
+Criando um novo branch:
+git branch teste
+para ver em qual está, git branch (o que tiver com um * do lado é o que você está)
+para mudar para outro branch, git checkout e o nome do branch nesse caso teste,
+então fica git checkout teste
+
+
+
+Para ver o que foi modificado(Alterações) dentro do arquivo (antes de dar commit):
+git diff
+vai mostrar com sinais de + e - o que foi modificado.
+Se quiser pode ser colocado Ex: git diff style.css (e o nome do arquivo pra saber somente por esse arquivo.)
+
+Para ver o arquivo que foi modificado.
+git diff --name-only
+
+
+
+
+Para voltar o estado do arquivo:
+git checkout HEAD -- style.css
+
+No caso HEAD é a mesma coisa de colocar o nome do branch atual.
+
+
+
+
+Endreço do site pra fazer o link com o git:
+Link do site : https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#platform-windows
+
+No gitBash dar o comando:(DEPOIS FUI PARA O CMD)
+ssh-keygen -t ed25519 -C "your_email@example.com"
+depois desse comando é só dar enter.
+
+Vai criar uma pasta .ssh em:
+C:\Users\Jnnr7\.ssh
+
+localizar o arquivo em: C:\Users\Jnnr7\.ssh
+e arrastar o arquivo para um txt para pegar a chave que está dentro.
+
+No github ir em Settings depois em SSH and GPGkeys e adicionar a chave.
+
+Depois de criar o repositório como existente, dar o comando:
+git remote add origin https://github.com/jrgoncalves1979/modulogit.git
+que é o caminho do repositório.
+O nome ficou como origin. ("ORIGIN SERVIDOR REMOTO,COMO SE FOSSE ISSO")
+
+Depois dar um git push -u origin master pra enviar os arquivos da maquina para o repositório.
+git push origin master (com esse funcionou tambem)
+
+
+
+Para ver o que enviae o que recebe do meu repositório: 
+git remote -v
+Para ver o repositorio criado como origin
+git remote 
+
+
+
+IGNORAR arquivos.
+Dentro da pasta modulogit criar um arquivo com nome de .gitignore colocar o nome de arquivos, pastas ou até a extenção que deseja esconder.
+Dar o git add -A e depois git push origin master pra subir pro git, qualquer problema ver em git status
+
+
+
+
+Git Revert (ele volta commitando)
+git revert --no-edit d014f55ac79ed3625606927f7a34148d8eb4644c
+Comando revert, no edit é sem editar, e a chave do commit desejado.
+Isso volta o que foi feito e ainda tem acesso ao commit que deu erro, diferente do reset que se perde tudo ou partes.
+
+
+
+ADICIONAR E DELETAR UM BRANCH REMOTO:
+
+Adicionar um branch:
+git push origin teste
+Vai aparecer como *[new branch]
+
+Deletar um branch:
+git push origin :teste
+Só colocar os : (dois pontos para deletar)
+
+Obs: Basicamente os dois pontos é para deletar e sem nada para incluir.
+
+
+
+
+
+ADICIONAR E DELETAR UM BRANCH LOCAL:
+
+Para deletar um branch precisamos ir para outro branch, não podendo estar nele.
+Para deletar o branch local:
+git branch -D teste 
+O (D) tem que ser maiusculo, então fica git branch D maiusculo e o nome do branch.
+
+
+
+
+
+
+GIT PULL:
+!!!Sempre dar o git pull para depois dar o git push!!!, por que assim você atualiza o seu repositório local pra depois subir os arquivos novos.
+git pull origin master
+
+Git pull pra puxar, origin da onde está puxando, e o branch que quer puxar.
+
+
+
+
+
+CLONAR REPOSITÓRIOS REMOTOS:
+Criar uma pasta com nome que deseja, ir no CMD navegar até a pasta, ir no github do repositório desejado e dar o comando:
+git clone (e o endereço)
+EX: git clone https://github.com/jrgoncalves1979/modulogit
+
+
+
+
+
+
+
+Contribuindo com outros repositórios (fork / pull request)
+
+No github clicar em Fork, depois prgar a url do projeto que deseja ajudar/fazer parte.
+Abrir uma pasta com nome que deseja pra mandar o clone nela.
+Dar um git clone https://github.com/jrgoncalves1979/bonieky-live-javascript (git clone e endereço desejado)
+Dar um git status pra ver como está.
+Dar um git branch pra ver o branch que está.
+Dar um git add -A se ouve mudanças.
+Dar commit -am "nome desejado do commit"
+Dar git push origin master para enviar pro github.
+Depois de tudo tem que dar um New pull request lá no github para enviar pro dono do projeto.
+
+
+
+
+
+
+
+
+Excluir um repositorio no github:
+Dentro do repositorio que quer deletar,
+No GitHub.com, navegue até a página principal do repositório.
+No nome do seu repositório, clique em  Configurações.
+Botão de configurações do repositório
+Em Danger Zone (Zona de perigo), clique em Delete this repository (Excluir este repositório).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
